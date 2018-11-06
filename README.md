@@ -29,4 +29,4 @@ This shows a page with an your name and surname.
 ```
 https://127.0.0.1/readFile
 ```
-This shows a JSON obtained through the *"my_model.py"* and *"my_file.txt"* file and its functions.
+This shows a JSON obtained through the *"my_model.py"* and its functions and the *"my_file.txt"* file.
