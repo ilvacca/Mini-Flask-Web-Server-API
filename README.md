@@ -30,3 +30,25 @@ This shows a page with an your name and surname.
 https://127.0.0.1/readFile
 ```
 This shows a JSON obtained through the *"my_model.py"* and its functions and the *"my_file.txt"* file.
+
+
+## 4. Endpoint: "ReadFile"
+The output of the ReadFile endpoint is:
+```
+[
+	{
+		"id":"1",
+		"temperature":"12"
+	},{
+		"id":"2",
+		"temperature":"42"
+	},{
+		"id":"3",
+		"temperature":"15"
+	},{
+		"id":"4",
+		"temperature":"23"
+	}
+	...
+]
+```
