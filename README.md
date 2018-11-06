@@ -1,14 +1,18 @@
 # Simple Flask API Web Server
 ### *From Plain text to JSON*
 
-### Info
+---
+
+## Info
 This is a simple project from my Data Science course made by graduate students.
 
-#### The Task
+---
+
+### The Task
 Create an API Web Server by using the Flask micro framework to display data from a Plain Text file in JSON format.
 After receiving a request the server will respond with a JSON.
 
-#### Routes (Endpoints)
+## Routes (Endpoints)
 These are the main Routes of the Web Server.
 
 ##### Index
