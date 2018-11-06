@@ -11,14 +11,16 @@ After receiving a request the server will respond with a JSON.
 #### Routes (Endpoints)
 These are the main Routes of the Web Server.
 
-Index
-	```https://127.0.0.1/```
-	This shows the main page with an "Hello world!" text.
+##### Index
+```
+https://127.0.0.1/
+```
+This shows the main page with an "Hello world!" text.
 
-Name
-	```https://127.0.0.1/name?name=Alessio&surname=Vaccaro```
-	This shows a page with an your name and surname.
+##### Name
+```https://127.0.0.1/name?name=Alessio&surname=Vaccaro```
+This shows a page with an your name and surname.
 
-ReadFile
+##### ReadFile
 ```https://127.0.0.1/readFile```
 This shows a JSON obtained through the *"my_model.py"* and *"my_file.txt"* file and its functions.
