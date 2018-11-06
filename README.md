@@ -9,15 +9,15 @@ Create an API Web Server by using the Flask micro framework to display data from
 After receiving a request the server will respond with a JSON.
 
 #### Routes (Endpoints)
-These are the main 
+These are the main Routes of the Web Server.
 
 Index
-```https://127.0.0.1/```
-This shows the main page with an "Hello world!" text.
+	```https://127.0.0.1/```
+	This shows the main page with an "Hello world!" text.
 
 Name
-```https://127.0.0.1/name?name=Alessio&surname=Vaccaro```
-This shows a page with an your name and surname.
+	```https://127.0.0.1/name?name=Alessio&surname=Vaccaro```
+	This shows a page with an your name and surname.
 
 ReadFile
 ```https://127.0.0.1/readFile```
