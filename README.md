@@ -1,39 +1,40 @@
-# Simple Flask API Web Server
+# Mini Flask API Web Server Example
+
 ### *From Plain text to JSON*
 
 ---
 
 ## 1. Info
-This is a simple project from my Data Science course made by graduate students.
+This is a sample project to learn the basics of a Web Server using Flask and Python.
 
 ## 2. The Task
-Create an API Web Server by using the Flask micro framework to display data from a Plain Text file in JSON format.
-After receiving a request the server will respond with a JSON.
+Create an **API Web Server** by using the **Flask** micro framework to *expose* data extracted from a *plain text file* in *JSON*.
+After receiving a request **the server will respond with a JSON**.
 
 ## 3. Routes (Endpoints)
-These are the main Routes of the Web Server.
+These are the main routes of the Web Server.
 
-### Index
+### 3.1. Index
 ```
 https://127.0.0.1/
 ```
 This shows the main page with an "Hello world!" text.
 
-### Name
+### 3.2. Name
 ```
-https://127.0.0.1/name?name=Alessio&surname=Vaccaro
+https://127.0.0.1/name?name=YOURNAME&surname=YOURSURNAME
 ```
 This shows a page with an your name and surname.
 
-### ReadFile
+### 3.3. ReadFile
 ```
 https://127.0.0.1/readFile
 ```
-This shows a JSON obtained through the *"my_model.py"* and its functions and the *"my_file.txt"* file.
+This shows a JSON obtained through the *"modules.py"* and its functions and the *"my_file.txt"* file.
 
 
-## 4. Endpoint: "ReadFile"
-The output of the ReadFile endpoint is:
+## 3.4. Endpoint: "ReadFile"
+The output of the **ReadFile endpoint** will be:
 ```
 [
 	{
@@ -52,3 +53,8 @@ The output of the ReadFile endpoint is:
 	...
 ]
 ```
+
+## Credits
+
+*These resources were created with* ❤ *by Alessio Vaccaro*.
+[Website](https://www.alessiovaccaro.com) | [LinkedIn](https://www.linkedin.com/in/alessio-vaccaro/) 

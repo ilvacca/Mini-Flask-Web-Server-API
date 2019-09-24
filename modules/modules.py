@@ -1,15 +1,15 @@
-# This function read my file
-def readFile():
-    with open("my_file.txt", "r") as my_fake_db:
+# This function reads my file
+def readFile(databasePath):
+    with open(databasePath, "r") as myFakeDB:
         # Read my file and split by row ("\n")
-        info = my_fake_db.read().split("\n")
-        # Headers: name of the columns
+        info = myFakeDB.read().split("\n")
+        # headers: name of the columns
         headers = info[0].split("\t")
-        # Data: data from my temperature probe
+        # data: data from my temperature probe
         data = [row.split("\t") for row in info[1:]]
     return (headers, data)
 
-# From readed file to JSON
+# This function converts the plain text file to a JSON
 def plainFileToJSON(headers, data):
     resultJSON = []
     for row in data:
@@ -19,9 +19,9 @@ def plainFileToJSON(headers, data):
         resultJSON.append(tempDict)
     return(resultJSON)
 
-# It calls the functions "readFile" and "plainFileToJSON"
+# This function calls both "readFile()" and "plainFileToJSON()"
 # to return a JSON file
-def readTxtToJSON():
-    headers, data = readFile()
+def readTxtToJSON(databasePath):
+    headers, data = readFile(databasePath)
     myJSON = plainFileToJSON(headers, data)
     return(myJSON)

@@ -1,5 +1,8 @@
 from flask import Flask, request, render_template
-from my_model import *
+from modules.modules import *
+import os
+
+DATABASE_PATH = r"%s/database/my_file.txt" % os.path.dirname(os.path.realpath(__file__))
 
 app = Flask(__name__)
 
@@ -18,8 +21,8 @@ def name():
 # API Routing to get JSON file
 @app.route("/readFile")
 def readFileRoute():
-    result = readTxtToJSON()
+    result = readTxtToJSON(DATABASE_PATH)
     return str(result)
 
 if __name__ == "__main__":
-	app.run()
+    app.run()
