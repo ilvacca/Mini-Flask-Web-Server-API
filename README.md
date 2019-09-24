@@ -32,8 +32,7 @@ https://127.0.0.1/readFile
 ```
 This shows a JSON obtained through the *"modules.py"* and its functions and the *"my_file.txt"* file.
 
-
-## 3.4. Endpoint: "ReadFile"
+### 3.4. Endpoint: "ReadFile"
 The output of the **ReadFile endpoint** will be:
 ```
 [
